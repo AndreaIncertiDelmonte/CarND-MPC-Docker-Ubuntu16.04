@@ -1,6 +1,6 @@
 ##################################################################################
 #
-# Docker image to run Udacity SDC-ND Term 2 Project 4 MPC Model Predictive control
+# Docker image to run Udacity SDC-ND Term 2 Project 5 MPC Model Predictive control
 #
 # Original image https://github.com/udacity/CarND-MPC-Quizzes/blob/master/Dockerfile
 #
