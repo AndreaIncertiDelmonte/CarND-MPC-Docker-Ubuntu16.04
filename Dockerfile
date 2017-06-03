@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl-dev \
 	libuv1-dev \
 	cppad \
+	python-matplotlib \
+    python2.7-dev \
 	&& \
 	rm -rf /var/lib/apt/lists/*
 
