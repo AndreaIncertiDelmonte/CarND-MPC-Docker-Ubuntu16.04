@@ -24,12 +24,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     cppad \
     libssl-dev \
-	libuv1-dev \
-	cppad \
-	python-matplotlib \
+    libuv1-dev \
+    cppad \
+    python-matplotlib \
+    python-tk \
     python2.7-dev \
-	&& \
-	rm -rf /var/lib/apt/lists/*
+    && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /src
 
@@ -48,6 +49,8 @@ RUN cd uWebSockets && \
     make && \ 
     make install && \
     ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
+
+ENV MPLBACKEND "agg"
 
 WORKDIR /src/second_term
 
